@@ -5,12 +5,22 @@
     <link>https://ishikasingh.github.io/</link>
       <atom:link href="https://ishikasingh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ishikasingh.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Academic</title>
       <link>https://ishikasingh.github.io/</link>
     </image>
+    
+    <item>
+      <title>Scientific Discovery and it’s Logic — A review</title>
+      <link>https://ishikasingh.github.io/post/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://ishikasingh.github.io/post/</guid>
+      <description>&lt;p&gt;Find the article here on 
+&lt;a href=&#34;ttps://medium.com/@ishikasingh95/scientific-discovery-and-its-logic-a-review-39b644e1a912?source=friends_link&amp;amp;sk=eba783255cc810bc1dbec6aaba3b0216&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
