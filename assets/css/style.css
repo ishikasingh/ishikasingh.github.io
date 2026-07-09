@@ -63,6 +63,13 @@ img {
   max-width: 100%;
 }
 
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 a {
   color: var(--accent);
   text-decoration-color: rgba(var(--accent-rgb), 0.42);
@@ -259,28 +266,34 @@ a:focus-visible {
 
 .profile-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
   margin-top: 1.1rem;
 }
 
 .profile-links a {
-  padding-right: 0.7rem;
-  margin-right: 0.65rem;
-  border-right: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
   color: var(--muted);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.035em;
   text-decoration: none;
 }
 
-.profile-links a:last-child {
-  border-right: 0;
+.profile-links a:hover {
+  border-color: var(--accent);
+  color: var(--on-accent);
+  background: var(--accent);
 }
 
-.profile-links a:hover {
-  color: var(--accent);
+.social-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .section-heading {
