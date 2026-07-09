@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Ishika Singh — Academic Portfolio
 
-You can use the [editor on GitHub](https://github.com/ishikasingh/ishikasingh.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A dependency-free, single-page academic website built with plain HTML, CSS, and a small theme script. It supports a persistent light/dark mode and follows the visitor's system preference on first load.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## File structure
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```text
+academic-portfolio/
+├── index.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── files/
+    │   └── CV_Ishika_Singh_May25.pdf
+    ├── images/
+    │   ├── affective-text.png
+    │   ├── colosseum.png
+    │   ├── favicon.svg
+    │   ├── fullstack-placeholder.png
+    │   ├── ishika-singh.jpg
+    │   ├── og-vla.png
+    │   ├── progprompt.png
+    │   └── text-games.jpg
+    └── js/
+        └── theme.js
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Preview locally
 
-### Jekyll Themes
+From this folder, run:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ishikasingh/ishikasingh.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```sh
+python3 -m http.server 8000
+```
 
-### Support or Contact
+Then open `http://localhost:8000`.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Publish with GitHub Pages
+
+Copy the contents of this folder to the root of the `ishikasingh.github.io` repository and push. No build command or dependencies are required.
+
+The publication images, profile photo, stylesheet, and CV are included locally. The existing Flag Counter remains an external embed so its historical visitor count is preserved.

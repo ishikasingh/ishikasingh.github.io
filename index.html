@@ -1,1406 +1,444 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.8.0">
-
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Ishika Singh">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="PhD student, Computer Science">
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://ishikasingh.github.io/">
-
-  
-
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
-    
-
-    
-
-    
-
-    
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  
-
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
-
-  
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3TR2718YRH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'G-3TR2718YRH', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-
-  
-  
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Ishika Singh">
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
-
-  <link rel="canonical" href="https://ishikasingh.github.io/">
-
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary">
-  
-  <meta property="og:site_name" content="Ishika Singh">
-  <meta property="og:url" content="https://ishikasingh.github.io/">
-  <meta property="og:title" content="Ishika Singh">
-  <meta property="og:description" content="PhD student, Computer Science"><meta property="og:image" content="https://ishikasingh.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://ishikasingh.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
-  
-    <meta property="og:updated_time" content="2020-08-01T00:00:00&#43;00:00">
-  
-
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://ishikasingh.github.io/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://ishikasingh.github.io/"
-}
-</script>
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-
-  <title>Ishika Singh</title>
-
-</head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-  
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Ishika Singh</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Ishika Singh</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#pubs" data-target="#pubs"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/files/CV_Ishika_Singh_May25.pdf"><span>CV</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="about" class="home-section wg-about   " style="padding: 20px 0px 20px 0px;" >
-    <div class="container">
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="avatar avatar-circle" src="/authors/admin/avatar_hua60844db585ce3f429aa281a5e4a4201_913710_270x270_fill_q90_lanczos_center.jpg" alt="Ishika Singh">
-      
-
-      <div class="portrait-title">
-        <h2>Ishika Singh</h2>
-        <h3>PhD student, Computer Science</h3>
-
-        
-        <h3>
-          
-          <span>USC</span>
-          
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-        <li>
-          <a href="mailto:ishikasi@usc.edu" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.com/citations?user=eFsEy1YAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://twitter.com/Ishika_S_" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.linkedin.com/in/ishika95" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://github.com/ishikasingh" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://medium.com/@ishikasingh95" target="_blank" rel="noopener">
-            <i class="fab fa-medium big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.deviantart.com/ishikasingh95" target="_blank" rel="noopener">
-            <i class="fab fa-deviantart big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    <h1>Biography</h1>
-
-    <p>I am a PhD student at USC, advised by 
-<a href="https://jessethomason.com/" target="_blank" rel="noopener">Prof. Jesse Thomason</a>. My research interests are across NLP and robotics; primarily around why (how) language is necessary for (can be utilized in) robot learning and embodied AI. I think that problems under Embodied AI are yet more foundational, and hold deep-rooted benefits for the society.</p>
-<p>Previously, I was an undergrad at IIT Kanpur, where I worked on topics relating to NLP and theoretical ML with 
-<a href="https://ashutosh-modi.github.io/" target="_blank" rel="noopener">Prof. Ashutosh Modi</a> (IIT Kanpur), and 
-<a href="https://sites.google.com/site/pengtaoxie2008/" target="_blank" rel="noopener">Prof. Pengtao Xie</a> (UC San Diego). I have spent some summers interning at 
-<a href="https://adobe.ly/3irCKbn" target="_blank" rel="noopener">Adobe Research</a>, where I also received 
-<a href="https://research.adobe.com/news/adobe-india-women-in-technology-scholars-solving-technical-challenges/?scid=308c439d-b8ff-452a-a515-948a80864bfc&amp;mv=research_twitter&amp;mv2=owned_social" target="_blank" rel="noopener">Adobe India WIT Scholarship 2020</a>, 
-<a href="https://research.nvidia.com/labs/srl/" target="_blank" rel="noopener">NVIDIA Robotics Research</a>, and 
-<a href="https://www.aboutamazon.com/news/company-news/amazon-covariant-ai-robots" target="_blank" rel="noopener">Amazon Frontier AI and Robotics</a>. I was also selected as a member of the 
-<a href="https://sites.google.com/view/rsspioneers2025/home?authuser=0" target="_blank" rel="noopener">RSS Pioneers 2025 Cohort</a>.</p>
-<!-- [Prof. Nisheeth Srivastava](https://www.cse.iitk.ac.in/users/nsrivast/) (IIT-K),  -->
-<p><b>I am on the Job Market. Please reach out with robotics relevant opportunities!</b></p>
-<!--
-I am also a part of [Brain & Cognitive Society (BCS)](https://bcs-iitk.github.io/) at IIT-K, currently leading the group, where I organize interesting [talks](https://bcs-iitk.github.io/journal-club/) and collaborate/mentor [projects](https://bcs-iitk.github.io/events/2020/05/01/Summer-Projects-2020.html). I have also been an Academic Mentor to freshers for 1st year Mathematics Courses offered at IIT-K.
-
-
-My research agenda pertains to modeling interpretable intelligent machines with ethics and emotions incorporated. I have worked on topics subsumed under human-centred AI, i.e., an AI that serves and understands humans. I started with a project on "Brain-Computer Interface" during my 1st year of college, and tried to understand human thoughts. It motivated me to explore human thinking further, and I approached it from a more applicative direction via  "Predicting Web Browsing Patterns" under the supervision of [Prof. Nisheeth](https://www.cse.iitk.ac.in/users/nsrivast/). To comprehend as well as express efficiently, AI must understand emotions. This idea led me to a project on "Affective Language Modelling" supervised by [Prof. Ashutosh Modi](https://ashutosh-modi.github.io/). I also have some inclination towards mathematics, hence I pursued research work in theoretical ML as well. I worked on "Differentially Private ML" under [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008/) and on "Stochastic Minimax Optimization Algorithms". I am also a part of [Brain & Cognitive Society (BCS)](https://bcs-iitk.github.io/) at IIT Kanpur, currently leading the group. To make a better use of what I have learnt, I'm mentoring summer projects offered by BCS (proposed by me) on "Object-Oriented RL" and "Tweet Sentiment Extraction". I have also been an Academic Mentor to freshers for 1st year Mathematics Courses offered at IIT Kanpur.
-
-In my leisure time, I participated in a competition ([TechnoUtsav 2.0](https://technoutsav.techgig.com/)) organized by Deloitte, and my idea on "Intelligent Energy Harvesting" won the Grand Prize. My team was invited to [US India Analytics Summit 2019](https://twitter.com/DeloitteIndia/status/1126423884243382273), where I also met my youngest inspiration [Tanmay Bakshi](https://twitter.com/ishika3singh/status/1127609377874108416). In 2020, [Adobe Research](https://research.adobe.com/) selected me for [Adobe India WIT Scholarship](https://adobe.ly/2Sl1VkY). I have spent sometime in electrochemical research as well under [Prof. Raj Pala](http://home.iitk.ac.in/~rpala/). He has been a constant source of encouragement and knowledge (and fresh/smart jokes :P) to me.
-
-
-Apart from research, I like to spend time [writing](https://medium.com/@ishikasingh95) about my philosophical thoughts and [painting (traditional art)](https://www.deviantart.com/ishikasingh95). To know more, contact me on your favorite interface from the menu on your left. I am most efficient with emails and twitter.
--->
-
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Robot Learning</li>
-          
-          <li>3D Representation Learning</li>
-          
-          <li>Embodied AI</li>
-          
-          <li>Vision-Language Navigation</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD, Computer Science, 2021 - 2026</p>
-              <p class="institution">University of Southern California, LA, CA</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">B.Tech., double major in Computer Science and Chemical Engineering, 2016 - 2021</p>
-              <p class="institution">Indian Institute of Technology Kanpur, India</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-  
-
-  
-    
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="updates" class="home-section wg-blank   " style="padding: 20px 0 20px 0;height:405px; overflow: auto" >
-    <div class="container">
-      
-
-
-<div class="row">
-  
-    <div class="col-lg-12">
-      <h1>Updates</h1>
-      
-      <p><strong>April, 2026</strong>    Passed thesis defense at USC! <br />
-<strong>Jan, 2026</strong>    Co-organizing 
-<a href="">From Data to Decisions: VLA Pipelines for Real Robots</a>, ICRA 2026. <br />
-<strong>Dec, 2025</strong>    Serving as Program Committee Chair, 
-<a href="https://sites.google.com/view/rsspioneers2026/" target="_blank" rel="noopener">RSS Pioneers 2026</a>, RSS 2026. Looking forward to all the prospective applications! <br />
-<strong>Nov, 2025</strong>    Passed thesis proposal at USC! <br />
-<strong>Apr, 2025</strong>     Selected as a member of the 
-<a href="https://sites.google.com/view/rsspioneers2025/participants?authuser=0" target="_blank" rel="noopener">RSS Pioneers Cohort 2025</a>!!! <br />
-<strong>Mar, 2025</strong>    Co-organizing 
-<a href="https://semrob.github.io/" target="_blank" rel="noopener">SemRob Workshop</a>, RSS 2025. <br />
-<strong>Feb, 2025</strong>    I will be interning at 
-<a href="https://covariant.ai/insights/introducing-the-next-phase-of-our-ai-robotics-journey/" target="_blank" rel="noopener">Amazon Frontier AI and Robotics</a>, San Francisco in Summer'25! <br />
-<strong>Jan, 2025</strong>    Co-organizing 
-<a href="https://robo-3dvlms.github.io/" target="_blank" rel="noopener">3D VLMs for Robotics</a>, CVPR 2025. <br />
-<strong>Nov, 2024</strong>    Co-organizing 
-<a href="https://sites.google.com/view/langrob-corl24" target="_blank" rel="noopener">Language and Robot Learning Workshop</a>, CoRL 2024. <br />
-<strong>Oct, 2024</strong>     Passed qualification exam at USC and upgraded to being a PhD candidate! <br />
-<strong>Oct, 2024</strong>     Invited panelist in 
-<a href="https://careers.usc.edu/2024-beyond-the-phd/" target="_blank" rel="noopener">2024 Beyond the Ph.D. and Postdoctoral Career Conference</a>, USC. <br />
-<strong>Aug, 2024</strong>    Published 
-<a href="https://rasc.usc.edu/blog/language-models-meet-classical-planners-to-make-smarter-robot-task-plans/" target="_blank" rel="noopener">Language Models meet Classical Planners to make smarter Robot Task Plans</a> in the USC RASC blog. <br />
-<strong>May, 2024</strong>    
-<a href="https://robot-colosseum.github.io/" target="_blank" rel="noopener">The Colosseum</a> is accepted to RSS 2024 and is open-source now! <br />
-<strong>Feb, 2024</strong>     Interviewed for ProgPrompt for a 
-<a href="https://www.scientificamerican.com/article/scientists-are-putting-chatgpt-brains-inside-robot-bodies-what-could-possibly-go-wrong/" target="_blank" rel="noopener">Scientific American</a> article! <br />
-<strong>Jan, 2024</strong>     Released 
-<a href="https://robot-colosseum.github.io/" target="_blank" rel="noopener">The Colosseum</a>: A Benchmark for Evaluating Generalization for Robotic Manipulation.  <br />
-<strong>Jan, 2024</strong>     Selected as Finalist for the 
-<a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2024-north-america" target="_blank" rel="noopener">Qualcomm Innovation Fellowship</a> with 
-<a href="https://jesbu1.github.io/" target="_blank" rel="noopener">Jesse Zhang</a>! <br />
-<strong>Aug, 2023</strong>    I will be interning again at 
-<a href="https://research.nvidia.com/labs/srl/" target="_blank" rel="noopener">NVIDIA SRL</a> in Summer'24 with 
-<a href="https://www.cs.cornell.edu/~valts/" target="_blank" rel="noopener">Valts</a> and 
-<a href="https://animesh.garg.tech/" target="_blank" rel="noopener">Animesh</a>!! <br />
-<strong>May, 2023</strong>    I received 
-<a href="https://www.icra2023.org/ras-travel-grants" target="_blank" rel="noopener">RAS Travel Grant</a> to attend ICRA 2023. <br />
-<strong>May, 2023</strong>    Self-supervised 3D representation learning is accepted to 
-<a href="https://microsoft.github.io/robotics.pretraining.workshop.icra/" target="_blank" rel="noopener">Pretraining4Robotics workshop @ ICRA 2023</a>. <br />
-<strong>Jan, 2023</strong>     ProgPrompt is accepted to 
-<a href="https://www.icra2023.org/welcome" target="_blank" rel="noopener">ICRA 2023</a> and 
-<a href="https://link.springer.com/article/10.1007/s10514-023-10135-3" target="_blank" rel="noopener">AuRo</a> Journal. <br />
-<strong>Feb, 2022</strong>     Co-organizing vision-and-dialogue 
-<a href="https://teachingalfred.github.io/EAI22/" target="_blank" rel="noopener">TEACh TATC Challenge</a> @ 
-<a href="https://embodied-ai.org/" target="_blank" rel="noopener">Embodied AI Workshop</a>, CVPR'22 and CVPR'23. <br />
-<strong>Dec, 2021</strong>     I will be interning at 
-<a href="https://research.nvidia.com/labs/srl/" target="_blank" rel="noopener">NVIDIA AI Robotics Research Lab, Seattle</a> in Summer'22, advised by 
-<a href="https://www.cs.cornell.edu/~valts/" target="_blank" rel="noopener">Valts</a> and 
-<a href="https://animesh.garg.tech/" target="_blank" rel="noopener">Animesh</a>! <br />
-<strong>Dec, 2021</strong>     Work on Interactive Fiction Games accepted as extended abstract at AAMAS'22. [
-<a href="https://arxiv.org/abs/2107.08408" target="_blank" rel="noopener">arXiv</a>]. <br />
-<strong>Aug, 2021</strong>     Joined the CS PhD program at USC as a member in the 
-<a href="https://glamor.rocks/" target="_blank" rel="noopener">GLAMOR Lab</a> with 1 year of USC Grad Fellowship! <br />
-<strong>Sept, 2020</strong>    Work on Affective Text Generation accepted as long paper at COLING'20. [
-<a href="https://arxiv.org/abs/2011.04000" target="_blank" rel="noopener">arXiv</a>]<br />
-<strong>Sept, 2020</strong>    Adobe released a blog on my internship at Adobe Research, India! [
-<a href="https://adobe.ly/3irCKbn" target="_blank" rel="noopener">Read here</a>]<br />
-<strong>Jun, 2020</strong>    Work on Differentially-private Federated Neural Architecture Search accepted at 
-<a href="http://federated-learning.org/fl-icml-2020/" target="_blank" rel="noopener">FL-ICML'20</a>. [
-<a href="https://arxiv.org/abs/2006.10559" target="_blank" rel="noopener">arXiv</a>] <br />
-<strong>Dec, 2019</strong>     Received Adobe India WIT Scholarship 2020! [
-<a href="https://research.adobe.com/news/adobe-india-women-in-technology-scholars-solving-technical-challenges/?scid=308c439d-b8ff-452a-a515-948a80864bfc&amp;mv=research_twitter&amp;mv2=owned_social" target="_blank" rel="noopener">Adobe&rsquo;s Blog</a>][
-<a href="https://medium.com/@ishikasingh95/getting-through-adobe-india-wit-scholarship-3826ce38eb8?source=social.tw" target="_blank" rel="noopener">Getting-through-it Advice</a>]</p>
-
-    </div>
-  
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="pubs" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-      
-
-
-<div class="row">
-  
-    <div class="col-lg-12">
-      <h1>Selected Publications</h1>
-      <p>Full list here <a href="https://scholar.google.com/citations?hl=en&amp;user=eFsEy1YAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">google scholar</a></p>
-      <table style="width:100%">
-<tr>   
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/fullstack_placeholder.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>Adapting Large Pre-Trained Models for Generalized Robot Reasoning and Control
-</h3>
-<p style="font-size:120%;">
-<b>Ishika Singh</b> <br />
-  <i>Robotics: Science and Systems Pioneers (<a href="https://sites.google.com/view/rsspioneers2025/home?authuser=0">RSS Pioneers</a>) 2025</i> <br />
-  <!-- Also at <i> <a href="https://icra-manipulation-skill.github.io/">Future Roadmap for Manipulation Skills</a> @ ICRA 2024, <a href="https://embodied-ai.org/">Embodied AI</a> @ CVPR 2024</i> <br /> -->
-      <a href="https://openreview.net/pdf?id=zdIZrtDciQ">pdf</a> 
-      <!-- /  -->
-     <!-- <a href="https://robot-colosseum.github.io/">website</a> / -->
-      <!-- <a href="https://github.com/robot-colosseum">code</a> -->
-    </td> </p>
-  </tr>
-<tr>   
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/ogvla-model.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>OG-VLA:
-3D-Aware Vision Language Action Model via Orthographic Image Generation</h3>
-<p style="font-size:120%;">
-<b>Ishika Singh</b>, Ankit Goyal, Stan Birchfield, Dieter Fox, Animesh Garg, Valts Blukis <br />
-<i>Pre-print 2025</i> <br />
-  <!-- <i>Robotics: Science and Systems (<a href="https://roboticsconference.org/">RSS</a>) 2024</i> <br /> -->
-  <!-- Also at <i> <a href="https://icra-manipulation-skill.github.io/">Future Roadmap for Manipulation Skills</a> @ ICRA 2024, <a href="https://embodied-ai.org/">Embodied AI</a> @ CVPR 2024</i> <br /> -->
-      <a href="https://arxiv.org/abs/2506.01196">arXiv</a> / 
-     <a href="https://og-vla.github.io/">website</a> 
-     <!-- / -->
-      <!-- <a href="https://github.com/robot-colosseum">code</a> -->
-    </td> </p>
-  </tr>
-<tr>   
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/teaser_colosseum.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>The COLOSSEUM:
-A Benchmark for Evaluating Generalization for Robotic Manipulation</h3>
-<p style="font-size:120%;">
-Wilbert Pumacay*, <b>Ishika Singh</b>*, Jiafei Duan*, Ranjay Krishna, Jesse Thomason, Dieter Fox <br />
-  <i>Robotics: Science and Systems (<a href="https://roboticsconference.org/">RSS</a>) 2024</i> <br />
-  Also at <i> <a href="https://icra-manipulation-skill.github.io/">Future Roadmap for Manipulation Skills</a> @ ICRA 2024, <a href="https://embodied-ai.org/">Embodied AI</a> @ CVPR 2024</i> <br />
-      <a href="https://arxiv.org/abs/2402.08191">arXiv</a> / 
-     <a href="https://robot-colosseum.github.io/">website</a> /
-      <a href="https://github.com/robot-colosseum">code</a>
-    </td> </p>
-  </tr>
-<tr>   
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/teaser_progprompt.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>ProgPrompt: Generating Situated Robot Task Plans using Large Language Models</h3>
-<p style="font-size:120%;">
-<b>Ishika Singh</b>, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, Jesse Thomason, Animesh Garg <br />
-  <i>International Conference on Robotics and Automation (<a href="https://www.icra2023.org/">ICRA</a>) 2023</i> <br />
-  Also at <i> <a href="https://larel-workshop.github.io/">LaReL</a> @ NeurIPS 2022, <a href="https://sites.google.com/view/langrob-corl22/">LangRob</a> @ CoRL 2022</i> <br />
-  Extended version in <i> <a href="https://www.springer.com/journal/10514">Autonomous Robots (AR) 2023</a> (Large Language Models in Robotics)</i> <br />
-      <a href="https://arxiv.org/abs/2209.11302">arXiv</a> / 
-      <a href="https://link.springer.com/article/10.1007/s10514-023-10135-3">AR journal paper</a> /
-     <a href="https://progprompt.github.io/">website</a> /
-      <a href="https://github.com/NVlabs/progprompt-vh">code</a> /
-  <a href="https://youtu.be/cawHI_rYQoM">video</a> /
-  <a href="https://www.scientificamerican.com/article/scientists-are-putting-chatgpt-brains-inside-robot-bodies-what-could-possibly-go-wrong/">SciAm article</a>
-    </td> </p>
-  </tr>
-<tr>   
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/eg_page-0001.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>Pre-trained Language Models as Prior Knowledge for Playing Text-based Games</h3>
-<p style="font-size:120%;">
-<b>Ishika Singh</b>, Gargi Singh, Ashutosh Modi <br />
-<i>International Conference on Autonomous Agents and Multiagent Systems (<a href="https://aamas2022-conference.auckland.ac.nz/">AAMAS</a>) 2022  (Extended Abstracts)</i> <br />
-      <a href="https://arxiv.org/abs/2107.08408">arXiv</a> / 
-     <!-- <a href="https://www.youtube.com/watch?v=gY4cBfrtg5c">talk</a> / -->
-      <a href="https://github.com/Exploration-Lab/IFG-Pretrained-LM">code</a> /
-  <a href="https://ifaamas.org/Proceedings/aamas2022/pdfs/p1729.pdf">extended abstract</a>
-    </td> </p>
-  </tr>
-  <tr>
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/model-refined-affTG-1.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>Adapting a Language Model for Controlled Affective Text Generation</h3>
-<p style="font-size:120%;">
-<b>Ishika Singh</b>*, Ahsan Barkati*, Tushar Goswamy, Ashutosh Modi <br />
-<i>International Conference on Computational Linguistics (<a href="http://coling2020.org/">COLING</a>) 2020</i> <br />
-Also at <i><a href="https://wordplay-workshop.github.io/modern/#accepted_papers">Wordplay</a>: When Language Meets Games @ NeurIPS 2020</i> <br />
-      <a href="http://arxiv.org/abs/2011.04000">arXiv</a> / 
-      <a href="https://www.youtube.com/watch?v=gY4cBfrtg5c">talk</a> / 
-      <a href="https://github.com/ishikasingh/Affective-text-gen">code</a> </td> </p>
-  </tr>
-  <!-- <tr>
-    <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/fnas-ps-1.png"></td>
-    <td style="width:70%;vertical-align:middle">
-      <h3>Differentially-private Federated Neural Architecture Search</h3>
-<p style="font-size:120%;">
-<b>Ishika Singh</b>*, Haoyi Zhou*, Kunlin Yang, Meng Ding, Bill Lin, Pengtao Xie <br />
-<i>International Workshop on <a href="http://federated-learning.org/fl-icml-2020/">Federated Learning</a> for User Privacy and Data Confidentiality @ ICML 2020</i> <br />
-      <a href="https://arxiv.org/abs/2006.10559">arXiv</a> / 
-      <a href="https://ishikasingh.github.io/files/fl_icml2020workshop_FNAS.pdf">workshop version</a> / 
-      <a href="https://github.com/UCSD-AI4H/DP-FNAS">code</a> </td> </p>
-  </tr> -->
-  <!-- <tr>
-  <td style="width:30%;vertical-align:middle"><img src="https://ishikasingh.github.io/files/US20220171935A1-1.png"></td>
-  <td style="width:70%;vertical-align:middle">
-  <h3>Machine-learning techniques for augmenting electronic documents with data-verification indicators</h3>
-<p style="font-size:120%;">
-Navita Goyal, Vipul Shankhpal, Priyanshu Gupta, <b>Ishika Singh</b>, Baldip Singh Bijlani, Anandhavelu Natarajan <br />
-US Patent Application 17/108,424 | Adobe | 2022 <br />
-      <a href="https://patentimages.storage.googleapis.com/62/fc/61/a84b505f959580/US20220171935A1.pdf">pdf</a> </td> </p>
-  </tr> -->
-</table>
-
-    </div>
-  
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="contact" class="home-section wg-contact   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-      
-
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    <ul class="fa-ul">
-
-      
-      <li>
-        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email"><a href="mailto:ishikasi@usc.edu">ishikasi@usc.edu</a></span>
-      </li>
-      
-
-      
-
-      
-      
-        
-        <li>
-          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-          <span id="person-address">Ginsburg Hall, 2nd Floor, USC, Los Angeles, CA 90007</span>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fab fa-twitter fa-2x" aria-hidden="true"></i>
-        <a href="https://twitter.com/Ishika_S_" target="_blank" rel="noopener">DM</a>
-      </li>
-      
-
-    </ul>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
-
-      
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
-        
-      
-
-    
-
-    
-    
-
-    
-    
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    <script>const isSiteThemeDark = false;</script>
-    
-
-    
-    
-    
-    
-    
-    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ishika Singh — Research Scientist at NVIDIA Cosmos Lab, working on world models, robot learning, and physical AI.">
+    <meta name="author" content="Ishika Singh">
+    <meta name="theme-color" content="#7a1d32">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ishika Singh | Robot Learning &amp; Embodied AI">
+    <meta property="og:description" content="Research Scientist at NVIDIA Cosmos Lab, working on world models, robot learning, and physical AI.">
+    <meta property="og:image" content="assets/images/ishika-singh.jpg">
+    <title>Ishika Singh | Robot Learning &amp; Embodied AI</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = savedTheme || systemTheme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
       }
     </script>
-    
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    
-    
-    <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
-    
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-email" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+      </symbol>
+      <symbol id="icon-scholar" viewBox="0 0 24 24">
+        <path d="m2.5 9 9.5-5 9.5 5-9.5 5z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"/>
+        <path d="M6.5 11.5v4.2c2.9 2.1 8.1 2.1 11 0v-4.2M21.5 9v6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 24 24">
+        <path d="M5 4 19 20M19 4 5 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M5.1 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3.5 9h3.2v11H3.5V9Zm5.4 0H12v1.5h.1c.4-.8 1.5-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3v6h-3.2v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H8.9V9Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 7.68a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v1.9c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-medium" viewBox="0 0 24 24">
+        <circle cx="6.8" cy="12" r="5" fill="currentColor"/>
+        <ellipse cx="16" cy="12" rx="2.7" ry="5" fill="currentColor"/>
+        <ellipse cx="21" cy="12" rx="1.1" ry="4.4" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-deviantart" viewBox="0 0 24 24">
+        <path d="m15.7 3-1.4 3.2H9.5L7.7 10h4.9l-1.8 4H6l-1.7 4h4.8L7.7 21h4.6l1.4-3.1h4.8l1.8-4h-4.9l1.8-4H22l1.7-3.8H19L20.3 3h-4.6Z" fill="currentColor"/>
+      </symbol>
+    </svg>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.4aaf2d64e50f8e54cf66dcc54147a22e.js"></script>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="#about" aria-label="Ishika Singh, home">Ishika Singh</a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#updates">Updates</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-cv" href="assets/files/CV_Ishika_Singh_May25.pdf">CV <span aria-hidden="true">↗</span></a>
+          </nav>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Theme</span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-    
+    <main id="main-content">
+      <div class="intro" id="about">
+        <div class="profile-card">
+          <img class="portrait" src="assets/images/ishika-singh.jpg" alt="Portrait of Ishika Singh" width="270" height="270">
+          <div class="profile-copy">
+            <h1 id="intro-title">Ishika Singh</h1>
+            <p class="role">Research Scientist</p>
+            <p class="institution"><a href="https://research.nvidia.com/labs/cosmos-lab/">NVIDIA Cosmos Lab</a></p>
+          </div>
 
+          <nav class="profile-links" aria-label="Ishika Singh online">
+            <a href="mailto:ishikasingh95@gmail.com" aria-label="Email" title="Email">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-email"/></svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=eFsEy1YAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-scholar"/></svg>
+            </a>
+            <a href="https://twitter.com/Ishika_S_" aria-label="Twitter" title="Twitter">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-twitter"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ishika95" aria-label="LinkedIn" title="LinkedIn">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+            </a>
+            <a href="https://github.com/ishikasingh" aria-label="GitHub" title="GitHub">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-github"/></svg>
+            </a>
+            <a href="https://medium.com/@ishikasingh95" aria-label="Medium" title="Medium">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-medium"/></svg>
+            </a>
+            <a href="https://www.deviantart.com/ishikasingh95" aria-label="DeviantArt" title="DeviantArt">
+              <svg class="social-icon" aria-hidden="true"><use href="#icon-deviantart"/></svg>
+            </a>
+          </nav>
+        </div>
 
+        <div class="biography">
+          <div class="section-heading">
+            <p class="section-kicker">Profile</p>
+            <h2>Biography</h2>
+          </div>
 
+          <div class="prose">
+            <p>I am a Research Scientist at <a href="https://research.nvidia.com/labs/cosmos-lab/">NVIDIA Cosmos Lab</a>, where I work on generative physical AI and world models for robots. I completed my PhD in Computer Science at USC, advised by <a href="https://jessethomason.com/">Prof. Jesse Thomason</a>. My research interests are across NLP and robotics; primarily around why (how) language is necessary for (can be utilized in) robot learning and embodied AI. I think that problems under Embodied AI are yet more foundational, and hold deep-rooted benefits for the society.</p>
 
+            <p>Previously, I was an undergrad at IIT Kanpur, where I worked on topics relating to NLP and theoretical ML with <a href="https://ashutosh-modi.github.io/">Prof. Ashutosh Modi</a> (IIT Kanpur), and <a href="https://sites.google.com/site/pengtaoxie2008/">Prof. Pengtao Xie</a> (UC San Diego). I have spent some summers interning at <a href="https://adobe.ly/3irCKbn">Adobe Research</a>, where I also received <a href="https://research.adobe.com/news/adobe-india-women-in-technology-scholars-solving-technical-challenges/?scid=308c439d-b8ff-452a-a515-948a80864bfc&amp;mv=research_twitter&amp;mv2=owned_social">Adobe India WIT Scholarship 2020</a>, <a href="https://research.nvidia.com/labs/srl/">NVIDIA Robotics Research</a>, and <a href="https://www.aboutamazon.com/news/company-news/amazon-covariant-ai-robots">Amazon Frontier AI and Robotics</a>. I was also selected as a member of the <a href="https://sites.google.com/view/rsspioneers2025/home?authuser=0">RSS Pioneers 2025 Cohort</a>.</p>
+          </div>
 
+          <div class="academic-details">
+            <section aria-labelledby="interests-title">
+              <h3 id="interests-title">Research interests</h3>
+              <ul class="interest-list">
+                <li>Robot Learning</li>
+                <li>3D Representation Learning</li>
+                <li>Embodied AI</li>
+                <li>World Models for Physical AI</li>
+              </ul>
+            </section>
 
-  
-  
-  <div class="container">
+            <section aria-labelledby="education-title">
+              <h3 id="education-title">Education</h3>
+              <ol class="education-list">
+                <li>
+                  <p class="degree">PhD, Computer Science, 2021–2026</p>
+                  <p>University of Southern California, LA, CA</p>
+                </li>
+                <li>
+                  <p class="degree">B.Tech., double major in Computer Science and Chemical Engineering, 2016–2021</p>
+                  <p>Indian Institute of Technology Kanpur, India</p>
+                </li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="updates" aria-labelledby="updates-title">
+        <div class="section-heading">
+          <p class="section-kicker">News &amp; service</p>
+          <h2 id="updates-title">Updates</h2>
+        </div>
+
+        <section class="updates-group" aria-label="News and milestones">
+          <ol class="timeline timeline-scroll" tabindex="0" aria-label="News and milestones updates">
+          <li class="timeline-item">
+            <time datetime="2026-07">July, 2026</time>
+            <p>Joined <a href="https://research.nvidia.com/labs/cosmos-lab/">NVIDIA Cosmos Lab</a>. Super excited to build generative physical AI for robots!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2026-06">June, 2026</time>
+            <p><a href="https://og-vla.github.io/">OG-VLA</a> accepted to IROS 2026!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2026-04">April, 2026</time>
+            <p>Passed thesis defense at USC!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2025-11">Nov, 2025</time>
+            <p>Passed thesis proposal at USC!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2025-04">Apr, 2025</time>
+            <p>Selected as a member of the <a href="https://sites.google.com/view/rsspioneers2025/participants?authuser=0">RSS Pioneers Cohort 2025</a>!!!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2025-02">Feb, 2025</time>
+            <p>I will be interning at <a href="https://covariant.ai/insights/introducing-the-next-phase-of-our-ai-robotics-journey/">Amazon Frontier AI and Robotics</a>, San Francisco in Summer'25!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-10">Oct, 2024</time>
+            <p>Passed qualification exam at USC and upgraded to being a PhD candidate!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-10">Oct, 2024</time>
+            <p>Invited panelist in <a href="https://careers.usc.edu/2024-beyond-the-phd/">2024 Beyond the Ph.D. and Postdoctoral Career Conference</a>, USC.</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08">Aug, 2024</time>
+            <p>Published <a href="https://rasc.usc.edu/blog/language-models-meet-classical-planners-to-make-smarter-robot-task-plans/">Language Models meet Classical Planners to make smarter Robot Task Plans</a> in the USC RASC blog.</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-05">May, 2024</time>
+            <p><a href="https://robot-colosseum.github.io/">The Colosseum</a> is accepted to RSS 2024 and is open-source now!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-02">Feb, 2024</time>
+            <p>Interviewed for ProgPrompt for a <a href="https://www.scientificamerican.com/article/scientists-are-putting-chatgpt-brains-inside-robot-bodies-what-could-possibly-go-wrong/">Scientific American</a> article!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-01">Jan, 2024</time>
+            <p>Released <a href="https://robot-colosseum.github.io/">The Colosseum</a>: A Benchmark for Evaluating Generalization for Robotic Manipulation.</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-01">Jan, 2024</time>
+            <p>Selected as Finalist for the <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2024-north-america">Qualcomm Innovation Fellowship</a> with <a href="https://jesbu1.github.io/">Jesse Zhang</a>!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2023-08">Aug, 2023</time>
+            <p>I will be interning again at <a href="https://research.nvidia.com/labs/srl/">NVIDIA SRL</a> in Summer'24 with <a href="https://www.cs.cornell.edu/~valts/">Valts</a> and <a href="https://animesh.garg.tech/">Animesh</a>!!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2023-05">May, 2023</time>
+            <p>I received <a href="https://www.icra2023.org/ras-travel-grants">RAS Travel Grant</a> to attend ICRA 2023.</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2023-05">May, 2023</time>
+            <p>Self-supervised 3D representation learning is accepted to <a href="https://microsoft.github.io/robotics.pretraining.workshop.icra/">Pretraining4Robotics workshop @ ICRA 2023</a>.</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2023-01">Jan, 2023</time>
+            <p>ProgPrompt is accepted to <a href="https://www.icra2023.org/welcome">ICRA 2023</a> and <a href="https://link.springer.com/article/10.1007/s10514-023-10135-3">AuRo</a> Journal.</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2021-12">Dec, 2021</time>
+            <p>I will be interning at <a href="https://research.nvidia.com/labs/srl/">NVIDIA AI Robotics Research Lab, Seattle</a> in Summer'22, advised by <a href="https://www.cs.cornell.edu/~valts/">Valts</a> and <a href="https://animesh.garg.tech/">Animesh</a>!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2021-12">Dec, 2021</time>
+            <p>Work on Interactive Fiction Games accepted as extended abstract at AAMAS'22. [<a href="https://arxiv.org/abs/2107.08408">arXiv</a>].</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2021-08">Aug, 2021</time>
+            <p>Joined the CS PhD program at USC as a member in the <a href="https://glamor.rocks/">GLAMOR Lab</a> with 1 year of USC Grad Fellowship!</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2020-09">Sept, 2020</time>
+            <p>Work on Affective Text Generation accepted as long paper at COLING'20. [<a href="https://arxiv.org/abs/2011.04000">arXiv</a>]</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2020-09">Sept, 2020</time>
+            <p>Adobe released a blog on my internship at Adobe Research, India! [<a href="https://adobe.ly/3irCKbn">Read here</a>]</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2020-06">Jun, 2020</time>
+            <p>Work on Differentially-private Federated Neural Architecture Search accepted at <a href="http://federated-learning.org/fl-icml-2020/">FL-ICML'20</a>. [<a href="https://arxiv.org/abs/2006.10559">arXiv</a>]</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2019-12">Dec, 2019</time>
+            <p>Received Adobe India WIT Scholarship 2020! [<a href="https://research.adobe.com/news/adobe-india-women-in-technology-scholars-solving-technical-challenges/?scid=308c439d-b8ff-452a-a515-948a80864bfc&amp;mv=research_twitter&amp;mv2=owned_social">Adobe’s Blog</a>][<a href="https://medium.com/@ishikasingh95/getting-through-adobe-india-wit-scholarship-3826ce38eb8?source=social.tw">Getting-through-it Advice</a>]</p>
+          </li>
+          </ol>
+        </section>
+
+        <section class="updates-group service-group" aria-labelledby="service-title">
+          <h3 class="updates-subtitle" id="service-title">Academic service</h3>
+          <ol class="timeline service-timeline timeline-scroll" tabindex="0" aria-label="Academic service updates">
+            <li class="timeline-item">
+              <time datetime="2026-02">Feb, 2026</time>
+              <p>Co-organizing the <a href="https://human-robot-dialogue.github.io/">Workshop on Human-Robot Dialogue</a> at IROS 2026.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2026-01">Jan, 2026</time>
+              <p>Co-organizing From Data to Decisions: VLA Pipelines for Real Robots, ICRA 2026.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2025-12">Dec, 2025</time>
+              <p>Serving as Program Committee Chair, <a href="https://sites.google.com/view/rsspioneers2026/">RSS Pioneers 2026</a>, RSS 2026. Looking forward to all the prospective applications!</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2025-03">Mar, 2025</time>
+              <p>Co-organizing <a href="https://semrob.github.io/">SemRob Workshop</a>, RSS 2025.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2025-01">Jan, 2025</time>
+              <p>Co-organizing <a href="https://robo-3dvlms.github.io/">3D VLMs for Robotics</a>, CVPR 2025.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2024-11">Nov, 2024</time>
+              <p>Co-organizing <a href="https://sites.google.com/view/langrob-corl24">Language and Robot Learning Workshop</a>, CoRL 2024.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2022-02">Feb, 2022</time>
+              <p>Co-organizing vision-and-dialogue <a href="https://teachingalfred.github.io/EAI22/">TEACh TATC Challenge</a> @ <a href="https://embodied-ai.org/">Embodied AI Workshop</a>, CVPR'22 and CVPR'23.</p>
+            </li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <p class="section-kicker">Research</p>
+          <h2 id="publications-title">Selected publications</h2>
+        </div>
+
+        <p class="section-intro">Full list on <a href="https://scholar.google.com/citations?hl=en&amp;user=eFsEy1YAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>.</p>
+
+        <div class="publication-list">
+          <article class="publication">
+            <figure class="publication-figure">
+              <img src="assets/images/fullstack-placeholder.png" alt="Overview graphic for generalized robot reasoning and control" loading="lazy">
+            </figure>
+            <div class="publication-content">
+              <p class="publication-meta"><span>RSS Pioneers</span> 2025</p>
+              <h3>Adapting Large Pre-Trained Models for Generalized Robot Reasoning and Control</h3>
+              <p class="authors"><strong>Ishika Singh</strong></p>
+              <p class="venue"><em>Robotics: Science and Systems Pioneers (<a href="https://sites.google.com/view/rsspioneers2025/home?authuser=0">RSS Pioneers</a>) 2025</em></p>
+              <nav class="publication-links" aria-label="Links for Adapting Large Pre-Trained Models">
+                <a href="https://openreview.net/pdf?id=zdIZrtDciQ">PDF</a>
+              </nav>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="publication-figure">
+              <img src="assets/images/og-vla.png" alt="OG-VLA model overview" loading="lazy">
+            </figure>
+            <div class="publication-content">
+              <p class="publication-meta"><span>IROS</span> 2026</p>
+              <h3>OG-VLA: 3D-Aware Vision Language Action Model via Orthographic Image Generation</h3>
+              <p class="authors"><strong>Ishika Singh</strong>, Ankit Goyal, Stan Birchfield, Dieter Fox, Animesh Garg, Valts Blukis</p>
+              <p class="venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026</em></p>
+              <nav class="publication-links" aria-label="Links for OG-VLA">
+                <a href="https://arxiv.org/abs/2506.01196">arXiv</a>
+                <a href="https://og-vla.github.io/">Website</a>
+              </nav>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="publication-figure">
+              <img src="assets/images/colosseum.png" alt="The COLOSSEUM benchmark teaser" loading="lazy">
+            </figure>
+            <div class="publication-content">
+              <p class="publication-meta"><span>RSS</span> 2024</p>
+              <h3>The COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation</h3>
+              <p class="authors">Wilbert Pumacay*, <strong>Ishika Singh</strong>*, Jiafei Duan*, Ranjay Krishna, Jesse Thomason, Dieter Fox</p>
+              <p class="venue"><em>Robotics: Science and Systems (<a href="https://roboticsconference.org/">RSS</a>) 2024</em></p>
+              <p class="publication-note">Also at <em><a href="https://icra-manipulation-skill.github.io/">Future Roadmap for Manipulation Skills</a> @ ICRA 2024, <a href="https://embodied-ai.org/">Embodied AI</a> @ CVPR 2024</em></p>
+              <nav class="publication-links" aria-label="Links for The COLOSSEUM">
+                <a href="https://arxiv.org/abs/2402.08191">arXiv</a>
+                <a href="https://robot-colosseum.github.io/">Website</a>
+                <a href="https://github.com/robot-colosseum">Code</a>
+              </nav>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="publication-figure">
+              <img src="assets/images/progprompt.png" alt="ProgPrompt task planning example" loading="lazy">
+            </figure>
+            <div class="publication-content">
+              <p class="publication-meta"><span>ICRA · AuRo</span> 2023</p>
+              <h3>ProgPrompt: Generating Situated Robot Task Plans using Large Language Models</h3>
+              <p class="authors"><strong>Ishika Singh</strong>, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, Jesse Thomason, Animesh Garg</p>
+              <p class="venue"><em>International Conference on Robotics and Automation (<a href="https://www.icra2023.org/">ICRA</a>) 2023</em></p>
+              <p class="publication-note">Also at <em><a href="https://larel-workshop.github.io/">LaReL</a> @ NeurIPS 2022, <a href="https://sites.google.com/view/langrob-corl22/">LangRob</a> @ CoRL 2022</em></p>
+              <p class="publication-note">Extended version in <em><a href="https://www.springer.com/journal/10514">Autonomous Robots (AR) 2023</a> (Large Language Models in Robotics)</em></p>
+              <nav class="publication-links" aria-label="Links for ProgPrompt">
+                <a href="https://arxiv.org/abs/2209.11302">arXiv</a>
+                <a href="https://link.springer.com/article/10.1007/s10514-023-10135-3">AR journal paper</a>
+                <a href="https://progprompt.github.io/">Website</a>
+                <a href="https://github.com/NVlabs/progprompt-vh">Code</a>
+                <a href="https://youtu.be/cawHI_rYQoM">Video</a>
+                <a href="https://www.scientificamerican.com/article/scientists-are-putting-chatgpt-brains-inside-robot-bodies-what-could-possibly-go-wrong/">SciAm article</a>
+              </nav>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="publication-figure">
+              <img src="assets/images/text-games.jpg" alt="Example from research on playing text-based games" loading="lazy">
+            </figure>
+            <div class="publication-content">
+              <p class="publication-meta"><span>AAMAS</span> 2022</p>
+              <h3>Pre-trained Language Models as Prior Knowledge for Playing Text-based Games</h3>
+              <p class="authors"><strong>Ishika Singh</strong>, Gargi Singh, Ashutosh Modi</p>
+              <p class="venue"><em>International Conference on Autonomous Agents and Multiagent Systems (<a href="https://aamas2022-conference.auckland.ac.nz/">AAMAS</a>) 2022 (Extended Abstracts)</em></p>
+              <nav class="publication-links" aria-label="Links for Pre-trained Language Models as Prior Knowledge">
+                <a href="https://arxiv.org/abs/2107.08408">arXiv</a>
+                <a href="https://github.com/Exploration-Lab/IFG-Pretrained-LM">Code</a>
+                <a href="https://ifaamas.org/Proceedings/aamas2022/pdfs/p1729.pdf">Extended abstract</a>
+              </nav>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="publication-figure">
+              <img src="assets/images/affective-text.png" alt="Controlled affective text generation model" loading="lazy">
+            </figure>
+            <div class="publication-content">
+              <p class="publication-meta"><span>COLING</span> 2020</p>
+              <h3>Adapting a Language Model for Controlled Affective Text Generation</h3>
+              <p class="authors"><strong>Ishika Singh</strong>*, Ahsan Barkati*, Tushar Goswamy, Ashutosh Modi</p>
+              <p class="venue"><em>International Conference on Computational Linguistics (<a href="http://coling2020.org/">COLING</a>) 2020</em></p>
+              <p class="publication-note">Also at <em><a href="https://wordplay-workshop.github.io/modern/#accepted_papers">Wordplay</a>: When Language Meets Games @ NeurIPS 2020</em></p>
+              <nav class="publication-links" aria-label="Links for Controlled Affective Text Generation">
+                <a href="http://arxiv.org/abs/2011.04000">arXiv</a>
+                <a href="https://www.youtube.com/watch?v=gY4cBfrtg5c">Talk</a>
+                <a href="https://github.com/ishikasingh/Affective-text-gen">Code</a>
+              </nav>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="section-kicker">Get in touch</p>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+
+        <address class="contact-grid">
+          <a class="contact-item" href="mailto:ishikasingh95@gmail.com">
+            <span class="contact-label">Email</span>
+            <span>ishikasingh95@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-label">Office</span>
+            <span>NVIDIA, Santa Clara, CA</span>
+          </div>
+          <a class="contact-item" href="https://twitter.com/Ishika_S_">
+            <span class="contact-label">Twitter</span>
+            <span>DM</span>
+          </a>
+        </address>
+      </section>
+    </main>
+
     <footer class="site-footer">
-  
-    Visitors since Oct 2020,     
-    <a href="https://info.flagcounter.com/hHr7"><img src="https://s05.flagcounter.com/count/hHr7/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_16/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-  
-
-
-  
-
-  <p class="powered-by">
-    
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-  </div>
-  
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
+      <div class="footer-inner">
+        <p class="visitor-count">Visitors since Oct 2020</p>
+        <a class="flag-counter" href="https://info.flagcounter.com/hHr7">
+          <img src="https://s05.flagcounter.com/count/hHr7/bg_F7F5F0/txt_1C2530/border_D8D3C8/columns_4/maxflags_16/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" loading="lazy">
         </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
+        <a class="back-to-top" href="#about">Back to top ↑</a>
       </div>
-    </div>
-  </div>
-</div>
-
-</body>
+    </footer>
+    <script src="assets/js/theme.js"></script>
+  </body>
 </html>
