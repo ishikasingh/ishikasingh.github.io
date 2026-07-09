@@ -99,7 +99,6 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid var(--header-border);
   background: var(--header-bg);
   backdrop-filter: blur(16px);
 }
@@ -318,7 +317,6 @@ a:focus-visible {
   grid-template-columns: 0.78fr 1.22fr;
   gap: clamp(2rem, 5vw, 4rem);
   padding-top: 2rem;
-  border-top: 1px solid var(--line);
 }
 
 .academic-details h3 {
@@ -379,7 +377,6 @@ a:focus-visible {
 
 .section {
   padding: clamp(4rem, 8vw, 7rem) 0;
-  border-top: 1px solid var(--line);
   scroll-margin-top: 70px;
 }
 
@@ -399,16 +396,8 @@ a:focus-visible {
   letter-spacing: -0.015em;
 }
 
-.updates-subtitle::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-}
-
 .service-group {
   padding: clamp(1.4rem, 3vw, 2.25rem);
-  border: 1px solid var(--line);
   background: var(--surface);
 }
 
@@ -452,7 +441,6 @@ a:focus-visible {
   grid-template-columns: 10rem minmax(0, 1fr);
   gap: 0;
   padding: 1.05rem 0;
-  border-bottom: 1px solid var(--line);
 }
 
 .timeline-item:first-child {
@@ -480,20 +468,11 @@ a:focus-visible {
   font-size: 1.02rem;
 }
 
-.publication-list {
-  border-top: 1px solid var(--line);
-}
-
 .publication {
   display: grid;
   grid-template-columns: 17rem minmax(0, 1fr);
   gap: clamp(2rem, 5vw, 4.5rem);
   padding: clamp(2.5rem, 5vw, 4rem) 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.publication:last-child {
-  border-bottom: 0;
 }
 
 .publication-figure {
@@ -600,10 +579,9 @@ html[data-theme="dark"] .publication-figure img {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.45fr 0.55fr;
-  gap: 1px;
+  gap: 1rem;
   margin: 0;
-  border: 1px solid var(--line);
-  background: var(--line);
+  background: transparent;
   font-style: normal;
 }
 
@@ -632,7 +610,6 @@ a.contact-item:hover {
 }
 
 .site-footer {
-  border-top: 1px solid var(--line);
   background: var(--paper-deep);
 }
 
