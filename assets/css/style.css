@@ -418,6 +418,34 @@ a:focus-visible {
   list-style: none;
 }
 
+.timeline-scroll {
+  max-height: 24rem;
+  padding-right: 1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--accent) var(--paper-deep);
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+.timeline-scroll:focus-visible {
+  outline: 3px solid rgba(var(--accent-rgb), 0.32);
+  outline-offset: 5px;
+}
+
+.timeline-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline-scroll::-webkit-scrollbar-track {
+  background: var(--paper-deep);
+}
+
+.timeline-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--accent);
+}
+
 .timeline-item {
   position: relative;
   display: grid;
@@ -813,6 +841,11 @@ a.contact-item:hover {
     padding-left: 0;
   }
 
+  .timeline-scroll {
+    max-height: 22rem;
+    padding-right: 0.7rem;
+  }
+
   .service-group {
     padding: 1.1rem;
   }
@@ -894,5 +927,11 @@ a.contact-item:hover {
 
   .publication {
     break-inside: avoid;
+  }
+
+  .timeline-scroll {
+    max-height: none;
+    padding-right: 0;
+    overflow: visible;
   }
 }
