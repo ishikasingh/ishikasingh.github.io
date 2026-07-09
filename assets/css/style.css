@@ -625,8 +625,7 @@ a.contact-item:hover {
   font-size: 0.76rem;
 }
 
-.visitor-count,
-.footer-credit {
+.visitor-count {
   margin: 0;
 }
 
@@ -634,13 +633,9 @@ a.contact-item:hover {
   max-width: 260px;
 }
 
-.footer-credit {
-  grid-column: 1 / 3;
-}
-
 .back-to-top {
   grid-column: 3;
-  grid-row: 1 / 3;
+  grid-row: 1;
   color: var(--accent);
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -833,7 +828,6 @@ a.contact-item:hover {
     align-items: start;
   }
 
-  .footer-credit,
   .back-to-top {
     grid-column: auto;
     grid-row: auto;
