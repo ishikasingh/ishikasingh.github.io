@@ -1,6 +1,6 @@
 # Ishika Singh — Academic Portfolio
 
-A dependency-free, single-page academic website built with plain HTML and CSS.
+A dependency-free, single-page academic website built with plain HTML, CSS, and a small theme script. It supports a persistent light/dark mode and follows the visitor's system preference on first load.
 
 ## File structure
 
@@ -13,15 +13,17 @@ academic-portfolio/
     │   └── style.css
     ├── files/
     │   └── CV_Ishika_Singh_May25.pdf
-    └── images/
-        ├── affective-text.png
-        ├── colosseum.png
-        ├── favicon.svg
-        ├── fullstack-placeholder.png
-        ├── ishika-singh.jpg
-        ├── og-vla.png
-        ├── progprompt.png
-        └── text-games.jpg
+    ├── images/
+    │   ├── affective-text.png
+    │   ├── colosseum.png
+    │   ├── favicon.svg
+    │   ├── fullstack-placeholder.png
+    │   ├── ishika-singh.jpg
+    │   ├── og-vla.png
+    │   ├── progprompt.png
+    │   └── text-games.jpg
+    └── js/
+        └── theme.js
 ```
 
 ## Preview locally

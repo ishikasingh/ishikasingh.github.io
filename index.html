@@ -12,6 +12,15 @@
     <meta property="og:image" content="assets/images/ishika-singh.jpg">
     <title>Ishika Singh | Robot Learning &amp; Embodied AI</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = savedTheme || systemTheme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -20,13 +29,19 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="site-name" href="#about" aria-label="Ishika Singh, home">Ishika Singh</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#updates">Updates</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-cv" href="assets/files/CV_Ishika_Singh_May25.pdf">CV <span aria-hidden="true">↗</span></a>
-        </nav>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#updates">Updates</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-cv" href="assets/files/CV_Ishika_Singh_May25.pdf">CV <span aria-hidden="true">↗</span></a>
+          </nav>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Theme</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -64,8 +79,6 @@
             <p>Previously, I was an undergrad at IIT Kanpur, where I worked on topics relating to NLP and theoretical ML with <a href="https://ashutosh-modi.github.io/">Prof. Ashutosh Modi</a> (IIT Kanpur), and <a href="https://sites.google.com/site/pengtaoxie2008/">Prof. Pengtao Xie</a> (UC San Diego). I have spent some summers interning at <a href="https://adobe.ly/3irCKbn">Adobe Research</a>, where I also received <a href="https://research.adobe.com/news/adobe-india-women-in-technology-scholars-solving-technical-challenges/?scid=308c439d-b8ff-452a-a515-948a80864bfc&amp;mv=research_twitter&amp;mv2=owned_social">Adobe India WIT Scholarship 2020</a>, <a href="https://research.nvidia.com/labs/srl/">NVIDIA Robotics Research</a>, and <a href="https://www.aboutamazon.com/news/company-news/amazon-covariant-ai-robots">Amazon Frontier AI and Robotics</a>. I was also selected as a member of the <a href="https://sites.google.com/view/rsspioneers2025/home?authuser=0">RSS Pioneers 2025 Cohort</a>.</p>
           </div>
 
-          <p class="notice"><span>On the job market</span> Please reach out with robotics relevant opportunities!</p>
-
           <div class="academic-details">
             <section aria-labelledby="interests-title">
               <h3 id="interests-title">Research interests</h3>
@@ -96,22 +109,20 @@
 
       <section class="section" id="updates" aria-labelledby="updates-title">
         <div class="section-heading">
-          <p class="section-kicker">News &amp; milestones</p>
+          <p class="section-kicker">News &amp; service</p>
           <h2 id="updates-title">Updates</h2>
         </div>
 
-        <ol class="timeline">
+        <section class="updates-group" aria-labelledby="news-title">
+          <h3 class="updates-subtitle" id="news-title">News &amp; milestones</h3>
+          <ol class="timeline">
+          <li class="timeline-item">
+            <time datetime="2026-07">July, 2026</time>
+            <p>Started working as research scientist at <a href="https://research.nvidia.com/labs/cosmos-lab/">NVIDIA Cosmos Lab</a>. Super excited to build generative physical AI for robots!</p>
+          </li>
           <li class="timeline-item">
             <time datetime="2026-04">April, 2026</time>
             <p>Passed thesis defense at USC!</p>
-          </li>
-          <li class="timeline-item">
-            <time datetime="2026-01">Jan, 2026</time>
-            <p>Co-organizing From Data to Decisions: VLA Pipelines for Real Robots, ICRA 2026.</p>
-          </li>
-          <li class="timeline-item">
-            <time datetime="2025-12">Dec, 2025</time>
-            <p>Serving as Program Committee Chair, <a href="https://sites.google.com/view/rsspioneers2026/">RSS Pioneers 2026</a>, RSS 2026. Looking forward to all the prospective applications!</p>
           </li>
           <li class="timeline-item">
             <time datetime="2025-11">Nov, 2025</time>
@@ -122,20 +133,8 @@
             <p>Selected as a member of the <a href="https://sites.google.com/view/rsspioneers2025/participants?authuser=0">RSS Pioneers Cohort 2025</a>!!!</p>
           </li>
           <li class="timeline-item">
-            <time datetime="2025-03">Mar, 2025</time>
-            <p>Co-organizing <a href="https://semrob.github.io/">SemRob Workshop</a>, RSS 2025.</p>
-          </li>
-          <li class="timeline-item">
             <time datetime="2025-02">Feb, 2025</time>
             <p>I will be interning at <a href="https://covariant.ai/insights/introducing-the-next-phase-of-our-ai-robotics-journey/">Amazon Frontier AI and Robotics</a>, San Francisco in Summer'25!</p>
-          </li>
-          <li class="timeline-item">
-            <time datetime="2025-01">Jan, 2025</time>
-            <p>Co-organizing <a href="https://robo-3dvlms.github.io/">3D VLMs for Robotics</a>, CVPR 2025.</p>
-          </li>
-          <li class="timeline-item">
-            <time datetime="2024-11">Nov, 2024</time>
-            <p>Co-organizing <a href="https://sites.google.com/view/langrob-corl24">Language and Robot Learning Workshop</a>, CoRL 2024.</p>
           </li>
           <li class="timeline-item">
             <time datetime="2024-10">Oct, 2024</time>
@@ -182,10 +181,6 @@
             <p>ProgPrompt is accepted to <a href="https://www.icra2023.org/welcome">ICRA 2023</a> and <a href="https://link.springer.com/article/10.1007/s10514-023-10135-3">AuRo</a> Journal.</p>
           </li>
           <li class="timeline-item">
-            <time datetime="2022-02">Feb, 2022</time>
-            <p>Co-organizing vision-and-dialogue <a href="https://teachingalfred.github.io/EAI22/">TEACh TATC Challenge</a> @ <a href="https://embodied-ai.org/">Embodied AI Workshop</a>, CVPR'22 and CVPR'23.</p>
-          </li>
-          <li class="timeline-item">
             <time datetime="2021-12">Dec, 2021</time>
             <p>I will be interning at <a href="https://research.nvidia.com/labs/srl/">NVIDIA AI Robotics Research Lab, Seattle</a> in Summer'22, advised by <a href="https://www.cs.cornell.edu/~valts/">Valts</a> and <a href="https://animesh.garg.tech/">Animesh</a>!</p>
           </li>
@@ -213,7 +208,42 @@
             <time datetime="2019-12">Dec, 2019</time>
             <p>Received Adobe India WIT Scholarship 2020! [<a href="https://research.adobe.com/news/adobe-india-women-in-technology-scholars-solving-technical-challenges/?scid=308c439d-b8ff-452a-a515-948a80864bfc&amp;mv=research_twitter&amp;mv2=owned_social">Adobe’s Blog</a>][<a href="https://medium.com/@ishikasingh95/getting-through-adobe-india-wit-scholarship-3826ce38eb8?source=social.tw">Getting-through-it Advice</a>]</p>
           </li>
-        </ol>
+          </ol>
+        </section>
+
+        <section class="updates-group service-group" aria-labelledby="service-title">
+          <h3 class="updates-subtitle" id="service-title">Academic service</h3>
+          <ol class="timeline service-timeline">
+            <li class="timeline-item">
+              <time datetime="2026-02">Feb, 2026</time>
+              <p>Co-organizing the <a href="https://human-robot-dialogue.github.io/">Workshop on Human-Robot Dialogue</a> at IROS 2026.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2026-01">Jan, 2026</time>
+              <p>Co-organizing From Data to Decisions: VLA Pipelines for Real Robots, ICRA 2026.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2025-12">Dec, 2025</time>
+              <p>Serving as Program Committee Chair, <a href="https://sites.google.com/view/rsspioneers2026/">RSS Pioneers 2026</a>, RSS 2026. Looking forward to all the prospective applications!</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2025-03">Mar, 2025</time>
+              <p>Co-organizing <a href="https://semrob.github.io/">SemRob Workshop</a>, RSS 2025.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2025-01">Jan, 2025</time>
+              <p>Co-organizing <a href="https://robo-3dvlms.github.io/">3D VLMs for Robotics</a>, CVPR 2025.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2024-11">Nov, 2024</time>
+              <p>Co-organizing <a href="https://sites.google.com/view/langrob-corl24">Language and Robot Learning Workshop</a>, CoRL 2024.</p>
+            </li>
+            <li class="timeline-item">
+              <time datetime="2022-02">Feb, 2022</time>
+              <p>Co-organizing vision-and-dialogue <a href="https://teachingalfred.github.io/EAI22/">TEACh TATC Challenge</a> @ <a href="https://embodied-ai.org/">Embodied AI Workshop</a>, CVPR'22 and CVPR'23.</p>
+            </li>
+          </ol>
+        </section>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
@@ -366,5 +396,6 @@
         <a class="back-to-top" href="#about">Back to top ↑</a>
       </div>
     </footer>
+    <script src="assets/js/theme.js"></script>
   </body>
 </html>

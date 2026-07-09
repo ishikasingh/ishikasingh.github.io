@@ -8,9 +8,34 @@
   --accent: #7a1d32;
   --accent-dark: #541222;
   --accent-soft: #f2e7e9;
+  --accent-rgb: 122, 29, 50;
+  --on-accent: #fff;
+  --header-bg: rgba(247, 245, 240, 0.94);
+  --header-border: rgba(216, 211, 200, 0.9);
   --max-width: 1120px;
   --serif: Georgia, "Times New Roman", Times, serif;
   --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --paper: #111315;
+  --paper-deep: #171a1e;
+  --surface: #1c2024;
+  --ink: #edf0f2;
+  --muted: #aeb6bf;
+  --line: #343b43;
+  --accent: #e6a3b2;
+  --accent-dark: #ffd0da;
+  --accent-soft: #2b1b21;
+  --accent-rgb: 230, 163, 178;
+  --on-accent: #241017;
+  --header-bg: rgba(17, 19, 21, 0.94);
+  --header-border: rgba(52, 59, 67, 0.92);
+  color-scheme: dark;
 }
 
 * {
@@ -25,7 +50,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(90deg, transparent 0, transparent calc(50% - 1px), rgba(122, 29, 50, 0.025) 50%, transparent calc(50% + 1px)),
+    linear-gradient(90deg, transparent 0, transparent calc(50% - 1px), rgba(var(--accent-rgb), 0.035) 50%, transparent calc(50% + 1px)),
     var(--paper);
   font-family: var(--sans);
   font-size: 16px;
@@ -40,7 +65,7 @@ img {
 
 a {
   color: var(--accent);
-  text-decoration-color: rgba(122, 29, 50, 0.38);
+  text-decoration-color: rgba(var(--accent-rgb), 0.42);
   text-underline-offset: 0.18em;
 }
 
@@ -50,7 +75,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid rgba(122, 29, 50, 0.25);
+  outline: 3px solid rgba(var(--accent-rgb), 0.32);
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -61,7 +86,7 @@ a:focus-visible {
   left: 0.75rem;
   z-index: 100;
   padding: 0.55rem 0.8rem;
-  color: #fff;
+  color: var(--on-accent);
   background: var(--accent);
   transform: translateY(-160%);
 }
@@ -74,8 +99,8 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(216, 211, 200, 0.9);
-  background: rgba(247, 245, 240, 0.94);
+  border-bottom: 1px solid var(--header-border);
+  background: var(--header-bg);
   backdrop-filter: blur(16px);
 }
 
@@ -97,6 +122,13 @@ a:focus-visible {
   letter-spacing: -0.02em;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  min-width: 0;
 }
 
 .site-nav {
@@ -122,6 +154,44 @@ a:focus-visible {
   padding: 0.45rem 0.7rem;
   border: 1px solid var(--accent);
   color: var(--accent);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.42rem;
+  min-height: 34px;
+  padding: 0.35rem 0.62rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid rgba(var(--accent-rgb), 0.32);
+  outline-offset: 3px;
+}
+
+.theme-icon {
+  width: 1em;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
 }
 
 .intro,
@@ -243,25 +313,6 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
-.notice {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  padding: 0.9rem 1rem;
-  margin: 2rem 0 2.5rem;
-  border-left: 3px solid var(--accent);
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-}
-
-.notice span {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
 .academic-details {
   display: grid;
   grid-template-columns: 0.78fr 1.22fr;
@@ -330,6 +381,35 @@ a:focus-visible {
   padding: clamp(4rem, 8vw, 7rem) 0;
   border-top: 1px solid var(--line);
   scroll-margin-top: 70px;
+}
+
+.updates-group + .updates-group {
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.updates-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.35rem;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.updates-subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.service-group {
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
 }
 
 .timeline {
@@ -417,6 +497,10 @@ a:focus-visible {
   mix-blend-mode: multiply;
 }
 
+html[data-theme="dark"] .publication-figure img {
+  mix-blend-mode: normal;
+}
+
 .publication-content {
   align-self: center;
 }
@@ -489,7 +573,7 @@ a:focus-visible {
 .publication-links a:hover {
   border-color: var(--accent);
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .contact-section {
@@ -581,9 +665,14 @@ a.contact-item:hover {
   }
 
   .site-nav {
-    width: 100%;
+    flex: 1;
+    width: auto;
     padding-bottom: 0.2rem;
     overflow-x: auto;
+  }
+
+  .header-actions {
+    width: 100%;
   }
 
   .site-nav a {
@@ -666,6 +755,28 @@ a.contact-item:hover {
     border: 0;
   }
 
+  .header-actions {
+    gap: 0.65rem;
+  }
+
+  .theme-toggle {
+    width: 34px;
+    flex: 0 0 34px;
+    padding: 0;
+  }
+
+  .theme-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .intro,
   .section {
     width: min(calc(100% - 2rem), var(--max-width));
@@ -684,12 +795,6 @@ a.contact-item:hover {
     margin-bottom: 2rem;
   }
 
-  .notice {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
   .academic-details {
     grid-template-columns: 1fr;
   }
@@ -706,6 +811,10 @@ a.contact-item:hover {
 
   .timeline p {
     padding-left: 0;
+  }
+
+  .service-group {
+    padding: 1.1rem;
   }
 
   .publication {
@@ -747,6 +856,19 @@ a.contact-item:hover {
 }
 
 @media print {
+  :root,
+  html[data-theme="dark"] {
+    --paper: #fff;
+    --paper-deep: #f2f2f2;
+    --surface: #fff;
+    --ink: #000;
+    --muted: #333;
+    --line: #bbb;
+    --accent: #551225;
+    --accent-dark: #340b16;
+    --accent-soft: #f5edf0;
+  }
+
   .site-header,
   .profile-links,
   .publication-links,
