@@ -492,6 +492,10 @@ a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
+.publication:last-child {
+  border-bottom: 0;
+}
+
 .publication-figure {
   display: flex;
   align-items: center;
