@@ -221,7 +221,6 @@ a:focus-visible {
   object-fit: cover;
 }
 
-.eyebrow,
 .section-kicker {
   margin: 0 0 0.25rem;
   color: var(--accent);
